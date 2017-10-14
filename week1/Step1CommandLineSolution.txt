@@ -1,0 +1,66 @@
+1. 
+	$ mkdir hyf-javascript1
+	$ cd hyf-javascript1/
+	$ mkdir week1
+	$ ls
+	$ cd week1/
+	$ touch greeting.js
+	$ vi greeting.js
+	
+	type a
+	console.log("Hello");
+	press Esc
+	type :wq
+	press enter
+
+	$ node greeting.js
+	Hello
+
+2. 
+	$ touch greetings.txt
+	$ for u in {1..5}; do echo "Hello"; done > greeting.txt
+	$ vi greeting.txt
+	$ for u in {1..5}; do cp greeting.txt $u.txt; done
+	$ ls
+	1.txt  2.txt  3.txt  4.txt  5.txt  greeting.js  greeting.txt  greetings.txt
+	$ cat 2.txt
+	Hello
+	Hello
+	Hello
+	Hello
+	Hello
+
+3. 
+	$ echo "cat" > pets.txt
+	$ echo "dog" >> pets.txt
+	$ echo "hamster" >> pets.txt
+	$ cat pets.txt
+	cat
+	dog
+	hamster
+
+4.
+	$ echo "cat" >> commands.txt
+	$ echo "ls" >> commands.txt
+	$ echo "pwd" >> commands.txt
+	$ cat commands.txt
+	cat
+	ls
+	pwd
+	
+5. 
+	$ sort -u pets.txt > lovelyCommands.txt
+	$ sort -u commands.txt >> lovelyCommands.txt
+	$ cat -u lovelyCommands.txt
+	cat
+	dog
+	hamster
+	cat
+	ls
+	pwd
+
+
+
+
+
+
